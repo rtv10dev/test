@@ -1,6 +1,6 @@
-PRUEBA TÉCNICO 
+PRUEBA TÉCNICA
 
-droyecto de maquetación web realizado con HTML, SCSS y JavaScript (ES Modules).  
+Proyecto de maquetación web realizado con HTML, SCSS y JavaScript (ES Modules).  
 Incluye un slider con vídeos, galería dinámica desde JSON, un lightbox accesible, un diseño responsive  accesibilidad (A11y).  
 
 
