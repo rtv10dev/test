@@ -18,7 +18,7 @@ export function cargarGaleria() {
           ${
             item.src.type === "image"
               ? `<img src="${item.src.jpg}" alt="${item.title}" width="${item.width}" height="${item.height}" loading="lazy">`
-              : `<video autoplay muted loop playsinline
+              : `<video autoplay muted loop playsinline preload="none"
                      poster="${item.src.poster || ""}">
                    <source src="${item.src.mp4}" type="video/mp4">
                  </video>`
