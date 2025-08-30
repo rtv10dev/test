@@ -93,10 +93,7 @@
     "title": "Experiencia",
     "category": ["Experiencias", "Videos"],
     "tags": ["mar", "buceo"],
-    "src": {
-      "type": "video",
-      "mp4": "videos/experiencia/experiencias (1).mp4"
-    },
+    "src": { "type": "image", "jpg": "img/experiencia/experiencias (5).webp" },
     "width": 1920,
     "height": 1080,
     "views": 760,
