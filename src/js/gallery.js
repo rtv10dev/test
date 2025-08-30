@@ -4,7 +4,7 @@ export function cargarGaleria() {
   const grid = document.getElementById("galeria-json");
   if (!grid) return;
 
-  fetch(import.meta.env.BASE_URL + "gallery.json") 
+  fetch("data/gallery.json") 
     .then(res => res.json())
     .then(data => {
       grid.innerHTML = data
