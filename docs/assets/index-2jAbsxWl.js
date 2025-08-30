@@ -4,7 +4,7 @@
           data-etiquetas="${e.tags.join(",")}" 
           data-vistas="${e.views}" 
           data-fecha="${e.createdAt}">
-          ${e.src.type==="image"?`<img src="${e.src.jpg}" alt="${e.title}" width="${e.width}" height="${e.height}" loading="lazy">`:`<video autoplay muted loop playsinline preload="none"
+          ${e.src.type==="image"?`<img src="${e.src.jpg}" alt="${e.title}" width="${e.width}" height="${e.height}" loading="lazy">`:`<video autoplay muted loop playsinline 
                      poster="${e.src.poster||""}">
                    <source src="${e.src.mp4}" type="video/mp4">
                  </video>`}
