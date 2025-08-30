@@ -45,52 +45,119 @@
 
     <main>
       <!-- #region hero-slider -->
-      <!-- <section class="hero" id="hero" aria-label="Presentación principal">
-        <div class="slider" id="slider">
-          <div class="slide activo">
-            <video muted playsinline>
-              <source src="/videos/hero-slider/vp-2.mp4" type="video/mp4" />
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <!-- Usa un h1 escondido para describir la sección -->
+        <h1 id="hero-title" class="sr-only">Presentación principal</h1>
+
+        <div
+          class="slider"
+          id="slider"
+          role="region"
+          aria-roledescription="Carrusel"
+          aria-label="Promociones principales"
+        >
+          <!-- Cada slide es un artículo con rol group -->
+          <div
+            class="slide activo"
+            role="group"
+            aria-roledescription="Diapositiva"
+            aria-label="1 de 3"
+          >
+            <video
+              muted
+              playsinline
+              aria-label="Video de experiencias de disfrute"
+              preload="auto"
+              poster="/img/poster1.webp"
+            >
+              <source src="/maquetacionSTH/videos/hero-slider/vp-2.mp4" type="video/mp4" />
             </video>
             <div class="contenido-slide">
-              <h1>Disfruta</h1>
+              <h2>Disfruta</h2>
               <p>Descubre experiencias únicas con nosotros</p>
               <a href="#galeria" class="btn-hero">Ver más</a>
             </div>
           </div>
 
-          <div class="slide">
-            <video muted playsinline>
+          <div
+            class="slide"
+            role="group"
+            aria-roledescription="Diapositiva"
+            aria-label="2 de 3"
+          >
+            <video
+              muted
+              playsinline
+              aria-label="Video de relajación y spa"
+              preload="none"
+              poster="/img/poster2.webp"
+            >
               <source
-                src="/videos/hero-slider/vp-1.mp4"
+                src="/maquetacionSTH/videos/hero-slider/vp-1.mp4"
                 type="video/mp4"
                 media="(max-width: 768px)"
               />
-              <source src="/videos/hero-slider/vp-1.mp4" type="video/mp4" />
+              <source src="/maquetacionSTH/videos/hero-slider/vp-1.mp4" type="video/mp4" />
             </video>
             <div class="contenido-slide">
-              <h1>Relájate</h1>
+              <h2>Relájate</h2>
               <p>Spa y bienestar para desconectar</p>
               <a href="#galeria" class="btn-hero">Explorar</a>
             </div>
           </div>
 
-          <div class="slide">
-            <video muted playsinline>
-              <source src="/videos/hero-slider/vp-3.mp4" type="video/mp4" />
+          <div
+            class="slide"
+            role="group"
+            aria-roledescription="Diapositiva"
+            aria-label="3 de 3"
+          >
+            <video
+              muted
+              playsinline
+              aria-label="Video de excursiones y aventuras"
+              preload="none"
+              poster="/img/poster3.webp"
+            >
+              <source src="/maquetacionSTH/videos/hero-slider/vp-3.mp4" type="video/mp4" />
             </video>
             <div class="contenido-slide">
-              <h1>Aventuras</h1>
+              <h2>Aventuras</h2>
               <p>Excursiones y experiencias inolvidables</p>
               <a href="#galeria" class="btn-hero">Empezar</a>
             </div>
           </div>
         </div>
 
-        <button class="flecha izquierda" aria-label="Anterior">❮</button>
-        <button class="flecha derecha" aria-label="Siguiente">❯</button>
+        <!-- Botones con aria-controls y labels claros -->
+        <button
+          class="flecha izquierda"
+          aria-label="Mostrar diapositiva anterior"
+          aria-controls="slider"
+        >
+          ❮
+        </button>
+        <button
+          class="flecha derecha"
+          aria-label="Mostrar diapositiva siguiente"
+          aria-controls="slider"
+        >
+          ❯
+        </button>
 
-        <div class="puntos" id="puntos" role="tablist"></div>
-      </section> -->
+        <!-- Indicadores accesibles -->
+        <div
+          class="puntos"
+          id="puntos"
+          role="tablist"
+          aria-label="Selector de diapositivas"
+        >
+          <!-- Cada punto debe generarse como button con role="tab" -->
+          <!-- Ejemplo:
+          <button role="tab" aria-selected="true" aria-controls="slide-1">1</button>
+          -->
+        </div>
+      </section>
       <!-- #endregion hero-slider -->
 
       <!-- #region galeria -->
