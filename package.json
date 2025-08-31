@@ -1,12 +1,12 @@
 {
-  "name": "maquetacionsth",
+  "name": "maquetacionsth2",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && rd /s /q docs && move dist docs"
+    "deploy": "vite build && rm -rf docs && mv dist docs"
   },
   "devDependencies": {
     "vite": "^7.1.2",
